@@ -22,7 +22,7 @@ class SendPulseProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/config/sendpulse.php' => config_path('sendpulse.php'),
-        ]);
+        ], 'config');
     }
 
     /**
